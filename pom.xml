@@ -48,6 +48,13 @@
                     <argLine>
                         -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
                     </argLine>
+
+                    <forkCount>2</forkCount>
+                    <reuseForks>true</reuseForks>
+                    <parallel>all</parallel>
+                    <threadCount>2</threadCount>
+                    <redirectTestOutputToFile>true</redirectTestOutputToFile>
+
                     <!-- <systemProperties>
                         <property>
                             <name>junit.jupiter.extensions.autodetection.enabled</name>
