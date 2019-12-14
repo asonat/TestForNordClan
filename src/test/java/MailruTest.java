@@ -1,7 +1,6 @@
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.SelenideElement;
 import com.codeborne.selenide.ElementsCollection;
-import com.codeborne.selenide.logevents.SelenideLogger;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.Keys;
@@ -11,7 +10,7 @@ import static com.codeborne.selenide.Condition.*;
 
 
 public class MailruTest {
-    String email = "mx1@ansend.com";//"ilya.filinin@nordclan.com";
+    String email = "ilya.filinin@nordclan.com";
     SelenideElement inbox = $(byXpath("//*[@id='b-nav_search']/div/div[3]/div[2]/div[1]/a/span[2]"));
     SelenideElement loginInput = $(byId("mailbox:login"));
     SelenideElement passwordInput = $(byId("mailbox:password"));
